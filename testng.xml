@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/UI/Documents/IdeaProjects/TestNG_Automation_Framework">
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="email" value="omenoo@mailinator.com"></parameter>
+        <parameter name="passwd" value="Omen1234"></parameter>
+        <classes>
+            <class name="Test.LoginTest">
+                <methods>
+                    <include name="loginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
