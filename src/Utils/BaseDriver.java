@@ -31,8 +31,8 @@ public class BaseDriver {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();
             wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10)); // sadece ana sayfa yüklenirken en başta
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // bütün webElement için geçerli
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // sadece ana sayfa yüklenirken en başta
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); // bütün webElement için geçerli
             driver.get("http://automationpractice.com/index.php");
         } else if (browser.equals("firefox")) {
             System.setProperty("webdriver.gecko.driver", "drivers/geckodriver.exe");
@@ -40,8 +40,8 @@ public class BaseDriver {
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().window().maximize();
             wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10)); // sadece ana sayfa yüklenirken en başta
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // bütün webElement için geçerli
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // sadece ana sayfa yüklenirken en başta
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30)); // bütün webElement için geçerli
             driver.get("http://automationpractice.com/index.php");
         }
 

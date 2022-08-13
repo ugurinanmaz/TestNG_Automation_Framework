@@ -11,7 +11,9 @@ public class MyAccountPageElements {
         PageFactory.initElements(driver, this);
     }
 
-
     @FindBy(xpath = "//span[text()='My account']")
     public WebElement myAccountText;
+
+    @FindBy(css = "a[title='Contact us']")
+    public WebElement contactUsButton;
 }
